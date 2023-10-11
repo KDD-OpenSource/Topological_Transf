@@ -13,6 +13,7 @@ In main.py, change parameters AMOUNT_PIX_SWAP,EPOCHS,DATASET and attack_used to 
 python train_model.py -d mnist -e 50 -b 128
 To craft adversarials, run:
 ### 2. Craft adversarial examples:
-python craft_adv_samples.py -d cifar -a cw-l2 -b 100
+python craft_adv_samples.py -d cifar -a cw-l2 -b 120
+
 ----------------------------------------
 main.py will test how attacks generated on the original model will transfer, but will also check the transferability for adversarials generated from the model trained on the topologically altered dataset then applied to the original model. (Both transfer directions)
