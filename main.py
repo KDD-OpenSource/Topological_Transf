@@ -111,7 +111,7 @@ def train(X_train, Y_train, X_test, Y_test, dataset='mnist', batch_size=128, epo
 def data_aug_for_topology_change(image):
     image_array = np.random.randint(0, 28, (10000,2)).astype(np.uint8)
     value = np.random.randint(0,255)
-    for i in range(len(image_array)): #set a random pixel to 255 for each image instance
+    for i in range(len(image_array)): #set a random pixel to random value for each image instance
         image[i][image_array[i][0]][image_array[i][1]] =value
         value = np.random.randint(0, 255)
 
