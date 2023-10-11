@@ -18,4 +18,4 @@ python craft_adv_samples.py -d cifar -a cw-l2 -b 120
 ----------------------------------------
 main.py will test how attacks generated on the original model will transfer, but will also check the transferability for adversarials generated from the model trained on the topologically altered dataset then applied to the original model. (Both transfer directions)
 
-STEPS TO RUN THE CODE: Make sure the trained model is put into the specified path. Then change hyperparameters in main.py file and run python main.py
+STEPS TO RUN THE CODE: Make sure the trained model is put into the specified path. Then change hyperparameters in main.py file and run python main.py. Your results for the particular run will be written into results.txt file and the dataset name will be printed out for double check.
